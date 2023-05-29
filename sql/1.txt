@@ -1,0 +1,1 @@
+SELECT Restaurants.name FROM Restaurants, Employees, Positions WHERE COUNT(Restaurants.id = Employees.restaurantId AND Employees.positionId = Positions.id AND Positions.title = 'waiter') > 2
